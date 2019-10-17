@@ -717,12 +717,12 @@ if __name__=='__main__':
             #Save the model
             if epoch % save_step ==0 and epoch!=0:
                 model_name='cbow_Stackedmodel_{}layers'.format(num_layers)
-                saver.save(sess,'../Model_respon/'+model_name+str(epoch)+'.ckpt')
+                saver.save(sess,'../model/'+model_name+str(epoch)+'.ckpt')
         
         print ("OPTIMIZATION FINISHED")
         
         # 将用于可视化的损失值、准确率数据写入磁盘
-        datapath=os.path.abspath('../Data_respon')
+        datapath=os.path.abspath('../data')
         dataname=model_name+'.txt'
         file=open(datapath+'\\'+dataname,'w')
         for i in range(len(train_accr_set)):
@@ -735,7 +735,7 @@ if __name__=='__main__':
         
         #根据模型名称加载模型
         model_name='skip_Stackedmodel_2layers500.ckpt'
-        saver.restore(sess,'../Model_respon/'+model_name)
+        saver.restore(sess,'../model/'+model_name)
         
         #或加载最近一次保存的模型
         #saver.restore(sess,tf.train.latest_checkpoint('../Model_new'))   

@@ -1,4 +1,4 @@
-# Stacked_Bilstm
+# Stacked Bi-LSTM
 This is the tensorflow implementation of Stacked Bi-LSTM using functional API for Chinese sentiment analysis. 
 
 ## Model Layout

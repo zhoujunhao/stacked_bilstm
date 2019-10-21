@@ -34,9 +34,22 @@ Moreover, you can train different deep learning models as baseline models such a
 
 ## Visualization
 **Run command below to visualize the impacts of differnet parameters:**
-You can visualize the impacts of parameters including the number of LSTM cells and the maximum sentence length. For example, you can visualize the impacts of the number of LSTM cells for Stacked Bi-LSTM model. 
+- Visualize the impacts of parameters including the number of LSTM cells and the maximum sentence length. For example, you can visualize the impacts of the number of LSTM cells for Stacked Bi-LSTM model. 
 ```
 python Visualization_hidden_size.py.py
 ```
 
 ![Visualization](https://github.com/zhoujunhao/stacked_bilstm/blob/master/figure/f3.PNG)
+
+## Citation
+```
+@article{zhou2019sentiment,
+  title={Sentiment Analysis of Chinese Microblog Based on Stacked Bidirectional LSTM},
+  author={Zhou, Junhao and Lu, Yue and Dai, Hong-Ning and Wang, Hao and Xiao, Hong},
+  journal={IEEE Access},
+  volume={7},
+  pages={38856--38866},
+  year={2019},
+  publisher={IEEE}
+}
+```
